@@ -5767,3 +5767,29 @@
 [2026-09-08 16:44:12] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
 [2026-09-08 16:44:14] [INFO] [BiharFloodAuto] Repository is already up to date.
 [2026-09-08 16:44:14] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-09-08 16:44:17] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-09-08 16:44:17] [INFO] [BiharFloodAuto] --- Loop #2 complete ---
+[2026-09-08 16:44:17] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 16:59:17. (Use 'Run Now' on the dashboard to skip this.)
+[2026-09-08 16:53:47] [INFO] [BiharFloodAuto] Manual 'Run Now' triggered via dashboard.
+[2026-09-08 16:53:47] [INFO] [BiharFloodAuto] Manual 'Run Now' triggered from dashboard — skipping remaining sleep.
+[2026-09-08 16:53:47] [INFO] [BiharFloodAuto] --- Loop #3 starting ---
+[2026-09-08 16:53:47] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-09-08 16:53:51] [INFO] [BiharFloodAuto] Git pull downloaded new changes. HEAD moved from b412244 to 0fcf580.
+[2026-09-08 16:53:51] [INFO] [BiharFloodAuto] Searching Gmail for UNREAD emails with 'Inundation Probability'...
+[2026-09-08 16:53:53] [INFO] [BiharFloodAuto] [MATCH] Found email with Subject: 'Inundation Probability 08-09-2026 AND 09-09-2026'
+[2026-09-08 16:53:53] [INFO] [BiharFloodAuto]    -> Downloading: 09092026.zip (Saving as 09092026.zip)
+[2026-09-08 16:53:55] [INFO] [BiharFloodAuto]    -> Saved successfully to /home/sac/Documents/Bihar_Flood_Automate/bihar_flood_automate/09092026.zip
+[2026-09-08 16:53:55] [INFO] [BiharFloodAuto]    -> Downloading: 08092026.zip (Saving as 08092026.zip)
+[2026-09-08 16:53:57] [INFO] [BiharFloodAuto]    -> Saved successfully to /home/sac/Documents/Bihar_Flood_Automate/bihar_flood_automate/08092026.zip
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto]    -> Marked email as read.
+[2026-09-08 16:53:58] [INFO] [paramiko.transport] Connected (version 2.0, client OpenSSH_8.9p1)
+[2026-09-08 16:53:58] [INFO] [paramiko.transport] Authentication (password) successful!
+[2026-09-08 16:53:58] [INFO] [paramiko.transport.sftp] [chan 0] Opened sftp connection (server version 3)
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Overwriting: 29082026.zip -> server...
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Overwriting: 08092026.zip -> server...
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Uploading: 09092026.zip -> server...
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Overwriting: 30082026.zip -> server...
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Overwriting: 01092026.zip -> server...
+[2026-09-08 16:53:58] [INFO] [BiharFloodAuto] [+] Overwriting: 31082026.zip -> server...
+[2026-09-08 16:53:59] [INFO] [BiharFloodAuto] [+] Successfully copied 6 file(s).
+[2026-09-08 16:53:59] [INFO] [paramiko.transport.sftp] [chan 0] sftp session closed.
