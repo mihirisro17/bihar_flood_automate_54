@@ -273,14 +273,16 @@ def sync_credentials_from_pc():
                 push_alert("PC credentials server auth token mismatch — check secrets.local.json on both machines.", "error")
                 STATE["pc_sync_status"] = "auth error"
                 return
-            logger.debug(f"PC credentials server returned {e.code} for {filename}")
-        except (urllib.error.URLError, TimeoutError, ConnectionError):
-            # PC is off or unreachable -- expected sometimes, not an alert.
+            logger.warning(f"[-] PC credentials server returned HTTP {e.code} for {filename} at {url}")
+            STATE["pc_sync_status"] = f"HTTP {e.code}"
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            # PC is off or unreachable -- expected sometimes, not critical,
+            # but log it visibly so it's not a silent mystery.
             STATE["pc_sync_status"] = "PC unreachable (using cached files)"
-            logger.debug(f"Could not reach PC credentials server at {url}")
+            logger.info(f"[-] Could not reach PC credentials server at {url} ({e}). Using existing local files.")
             return
         except Exception as e:
-            logger.debug(f"Unexpected error pulling {filename} from PC: {e}")
+            logger.warning(f"[-] Unexpected error pulling {filename} from PC ({url}): {e}")
             STATE["pc_sync_status"] = "error"
             return
 
@@ -341,7 +343,7 @@ def run_git_pull(repo_dir: str = REPO_DIR) -> bool:
         old_commit = repo.head.commit
 
         logger.debug(f"Pulling from remote: {origin.url}...")
-        origin.pull()
+        origin.pull(env={"GIT_TERMINAL_PROMPT": "0"})
         new_commit = repo.head.commit
         STATE["git_commit"] = new_commit.hexsha[:7]
 
@@ -381,7 +383,7 @@ def run_git_pull(repo_dir: str = REPO_DIR) -> bool:
         logger.error(f"Git pull failed with status code {e.status}.")
         logger.debug(f"Git error stderr: {e.stderr.strip()}")
         STATE["git_status"] = "pull failed"
-        push_alert(f"git pull failed (exit {e.status}) — check network/remote access.", "error")
+        push_alert(f"git pull failed (exit {e.status}) — likely needs SSH deploy key auth, see setup guide.", "error")
     except Exception as e:
         logger.exception(f"An unexpected error occurred during git operations: {e}")
         STATE["git_status"] = "error"
