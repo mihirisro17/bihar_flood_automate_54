@@ -5394,3 +5394,10 @@
 [2026-09-11 11:41:06] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
 [2026-09-11 11:41:10] [INFO] [BiharFloodAuto] Git pull downloaded new changes. HEAD moved from ad01ca3 to a6ba531.
 [2026-09-11 11:41:10] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-09-11 11:41:13] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-09-11 11:41:13] [INFO] [BiharFloodAuto] --- Loop #4 complete ---
+[2026-09-11 11:41:13] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 11:56:13. (Use 'Run Now' on the dashboard to skip this.)
+[2026-09-11 11:56:13] [INFO] [BiharFloodAuto] --- Loop #5 starting ---
+[2026-09-11 11:56:13] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-09-11 11:56:16] [INFO] [BiharFloodAuto] Repository is already up to date.
+[2026-09-11 11:56:16] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
