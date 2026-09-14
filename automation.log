@@ -4490,3 +4490,10 @@
 [2026-09-15 00:25:04] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
 [2026-09-15 00:25:06] [INFO] [BiharFloodAuto] Repository is already up to date.
 [2026-09-15 00:25:06] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-09-15 00:25:09] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-09-15 00:25:09] [INFO] [BiharFloodAuto] --- Loop #341 complete ---
+[2026-09-15 00:25:09] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 00:40:09. (Use 'Run Now' on the dashboard to skip this.)
+[2026-09-15 00:40:09] [INFO] [BiharFloodAuto] --- Loop #342 starting ---
+[2026-09-15 00:40:09] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-09-15 00:40:12] [INFO] [BiharFloodAuto] Repository is already up to date.
+[2026-09-15 00:40:12] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
