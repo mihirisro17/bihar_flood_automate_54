@@ -4816,3 +4816,10 @@
 [2026-09-15 10:59:30] [INFO] [BiharFloodAuto] [+] Overwriting: 03092026.zip -> server...
 [2026-09-15 10:59:30] [INFO] [BiharFloodAuto] [+] Successfully copied 21 file(s).
 [2026-09-15 10:59:30] [INFO] [paramiko.transport.sftp] [chan 0] sftp session closed.
+[2026-09-15 10:59:35] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-09-15 10:59:35] [INFO] [BiharFloodAuto] --- Loop #383 complete ---
+[2026-09-15 10:59:35] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 11:14:35. (Use 'Run Now' on the dashboard to skip this.)
+[2026-09-15 11:14:35] [INFO] [BiharFloodAuto] --- Loop #384 starting ---
+[2026-09-15 11:14:35] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-09-15 11:14:40] [INFO] [BiharFloodAuto] Git pull downloaded new changes. HEAD moved from 97041b1 to f581d68.
+[2026-09-15 11:14:40] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
