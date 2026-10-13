@@ -32192,3 +32192,13 @@ httplib2.error.ServerNotFoundError: Unable to find the server at gmail.googleapi
 [2026-10-13 15:06:15] [INFO] [BiharFloodAuto] [+] Overwriting: 03092026.zip -> server...
 [2026-10-13 15:06:15] [INFO] [BiharFloodAuto] [+] Successfully copied 49 file(s).
 [2026-10-13 15:06:15] [INFO] [paramiko.transport.sftp] [chan 0] sftp session closed.
+[2026-10-13 15:06:19] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-10-13 15:06:19] [INFO] [BiharFloodAuto] --- Loop #1 complete ---
+[2026-10-13 15:06:19] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 15:21:19. (Use 'Run Now' on the dashboard to skip this.)
+[2026-10-13 15:11:31] [INFO] [BiharFloodAuto] Manual 'Run Now' triggered via dashboard.
+[2026-10-13 15:11:31] [INFO] [BiharFloodAuto] Manual 'Run Now' triggered from dashboard — skipping remaining sleep.
+[2026-10-13 15:11:31] [INFO] [BiharFloodAuto] --- Loop #2 starting ---
+[2026-10-13 15:11:31] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-10-13 15:11:34] [INFO] [BiharFloodAuto] Git pull downloaded new changes. HEAD moved from c1930de to 554d4a3.
+[2026-10-13 15:11:34] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
+[2026-10-13 15:11:34] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
