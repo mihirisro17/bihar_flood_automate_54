@@ -22731,3 +22731,11 @@ httplib2.error.ServerNotFoundError: Unable to find the server at gmail.googleapi
 [2026-10-15 15:46:30] [INFO] [BiharFloodAuto] Repository is already up to date.
 [2026-10-15 15:46:35] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error timed out>). Using existing local files.
 [2026-10-15 15:46:35] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-10-15 15:46:42] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-10-15 15:46:42] [INFO] [BiharFloodAuto] --- Loop #195 complete ---
+[2026-10-15 15:46:42] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 16:01:42. (Use 'Run Now' on the dashboard to skip this.)
+[2026-10-15 16:01:42] [INFO] [BiharFloodAuto] --- Loop #196 starting ---
+[2026-10-15 16:01:42] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-10-15 16:02:02] [ERROR] [BiharFloodAuto] Git pull failed with status code 1.
+[2026-10-15 16:02:02] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
+[2026-10-15 16:02:02] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
