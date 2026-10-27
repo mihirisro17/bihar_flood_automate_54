@@ -3900,3 +3900,11 @@
 [2026-10-28 02:51:34] [ERROR] [BiharFloodAuto] Git pull failed with status code 1.
 [2026-10-28 02:51:34] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
 [2026-10-28 02:51:34] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-10-28 02:51:46] [ERROR] [BiharFloodAuto] Git push failed (Authentication required): stderr: 'fatal: Could not read from remote repository.'
+[2026-10-28 02:51:46] [INFO] [BiharFloodAuto] --- Loop #632 complete ---
+[2026-10-28 02:51:46] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 03:06:46. (Use 'Run Now' on the dashboard to skip this.)
+[2026-10-28 03:06:46] [INFO] [BiharFloodAuto] --- Loop #633 starting ---
+[2026-10-28 03:06:46] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-10-28 03:07:06] [ERROR] [BiharFloodAuto] Git pull failed with status code 1.
+[2026-10-28 03:07:06] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
+[2026-10-28 03:07:06] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
