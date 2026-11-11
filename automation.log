@@ -4260,3 +4260,11 @@
 [2026-11-11 13:58:56] [INFO] [BiharFloodAuto] Repository is already up to date.
 [2026-11-11 13:58:56] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
 [2026-11-11 13:58:56] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
+[2026-11-11 13:59:00] [INFO] [BiharFloodAuto] Successfully pushed automation.log to Git.
+[2026-11-11 13:59:00] [INFO] [BiharFloodAuto] --- Loop #1066 complete ---
+[2026-11-11 13:59:00] [INFO] [BiharFloodAuto] Sleeping for 15 minutes. Next check at 14:14:00. (Use 'Run Now' on the dashboard to skip this.)
+[2026-11-11 14:14:00] [INFO] [BiharFloodAuto] --- Loop #1067 starting ---
+[2026-11-11 14:14:00] [INFO] [BiharFloodAuto] Executing 'git pull' to check for updates...
+[2026-11-11 14:14:03] [INFO] [BiharFloodAuto] Repository is already up to date.
+[2026-11-11 14:14:03] [INFO] [BiharFloodAuto] [-] Could not reach PC credentials server at http://192.168.3.202:8765/token.json (<urlopen error [Errno 111] Connection refused>). Using existing local files.
+[2026-11-11 14:14:03] [INFO] [BiharFloodAuto] [*] Operation is OFF. Skipping Email Fetch and SFTP copy.
